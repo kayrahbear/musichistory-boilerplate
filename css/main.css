@@ -1,4 +1,51 @@
-/*Red = #FFB4B0
-Blue = #4DD7FA
-Light yellow = #FEFAC0
-Dark yellow = #785616*/
+html,
+p,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: Helvetica, sans-serif; }
+
+h2 {
+  color: #785616; }
+
+nav ul {
+  margin: 1em 0;
+  padding: 1.25em;
+  list-style-type: none;
+  background-color: #FFB4B0;
+  border: 3px solid black; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 0;
+  text-decoration: none; }
+
+.blue {
+  background-color: #4DD7FA;
+  border: 3px solid black; }
+
+.yellow {
+  background-color: #FEFAC0;
+  border: 3px solid black;
+  padding: 20px 15px 55px 25px; }
+
+.selectbox {
+  border-radius: 4px;
+  border: 1px solid black; }
+
+.col-md-11 {
+  padding: 0; }
+
+button {
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 5px 35px; }
+
+/*# sourceMappingURL=main.css.map */

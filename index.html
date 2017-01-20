@@ -4,10 +4,80 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="container">
+    <div class="row">
+        <div class="col-md-11">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">View Music |</a></li>
+                        <li><a href="#">Add Music |</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-2 blue">
+                </br>
+                <p>Song length:</p>
+                <input id="slider" type="range">
+
+                <p>Artist:</p>
+                <select class ="selectbox" name="artist">
+                    <option value="Lost Dog Street Band">Lost Dog Street Band</option>
+                    <option value="Steve Earle">Steve Earle</option>
+                    <option value="Hank Williams">Hank Williams</option>
+                    <option value="Jayke Orvis">Jayke Orvis</option>
+                    <option value="Reverend Deadeye">Reverend Deadeye</option>
+                </select>
+            </br></br>
+
+                <p>Album:</p>
+                <select class="selectbox" name="album">
+                    <option value="Rage and Tragedy">Rage &amp; Tragedy</option>
+                    <option value="The Mountain">The Mountain</option>
+                    <option value="I Saw The Light">I Saw The Light</option>
+                    <option value="Strange and Dangerous Times">Dangerous Times</option>
+                    <option value="Turn or Burn">Turn or Burn</option>
+                </select>
+                </br></br>
+
+                <p>Genre:</p>
+                <input type="checkbox"> Rock</br>
+                <input type="checkbox"> Bluegrass</br>
+                <input type="checkbox"> Country </br>
+                <input type="checkbox"> Classical </br>
+                <input type="checkbox"> Blues </br>
+                <input type="checkbox"> Hip Hop </br>
+                </br>
+                <button type="button" name="filter">Filter</button>
+                </br>
+
+            </div>
+
+            <div class="col-md-8 col-md-offset-1 yellow ">
+                <h2>Outlaw's Honeymoon</h2>
+                <p>Steve Earle | The Mountain | Bluegrass</p>
+                <h2>September Doves</h2>
+                <p>Lost Dog Street Band | Rage and Tragedy | County</p>
+                <h2>Dear John</h2>
+                <p>Hank Williams | I Saw the Light | Country</p>
+                <h2>Lead Me Astray</h2>
+                <p>Jayke Orvis | Strange and Dangerous Times | Bluegrass</p>
+            </div>
+        </div>
 
 
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
