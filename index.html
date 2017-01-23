@@ -10,7 +10,7 @@
 
 <body class="container">
     <div class="row">
-        <div class="col-md-11">
+        <div class="col-md-10">
             <header>
                 <nav>
                     <ul>
@@ -50,19 +50,21 @@
                 </br></br>
 
                 <p>Genre:</p>
-                <input type="checkbox"> Rock</br>
-                <input type="checkbox"> Bluegrass</br>
-                <input type="checkbox"> Country </br>
-                <input type="checkbox"> Classical </br>
-                <input type="checkbox"> Blues </br>
-                <input type="checkbox"> Hip Hop </br>
+                <ul class="genre">
+                <li><input type="checkbox"> Rock</li>
+                <li><input type="checkbox"> Bluegrass</li>
+                <li><input type="checkbox"> Country </li>
+                <li><input type="checkbox"> Classical </li>
+                <li><input type="checkbox"> Blues </li>
+                <li><input type="checkbox"> Hip Hop </li>
+                </ul>
                 </br>
                 <button type="button" name="filter">Filter</button>
                 </br>
 
             </div>
 
-            <div class="col-md-8 col-md-offset-1 yellow ">
+            <div id="main-songs" class="col-md-8 col-md-offset-1 yellow ">
                 <h2>Outlaw's Honeymoon</h2>
                 <p>Steve Earle | The Mountain | Bluegrass</p>
                 <h2>September Doves</h2>
@@ -79,5 +81,6 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
