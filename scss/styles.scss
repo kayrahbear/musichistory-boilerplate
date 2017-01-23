@@ -1,0 +1,64 @@
+@import "reset";
+
+$font-stack: Helvetica, sans-serif;
+$bluediv: #4DD7FA;
+$yellowdiv: #FEFAC0;
+$h2: #785616;
+$nav: #FFB4B0;
+$border: 3px solid black;
+
+body {
+    font: $font-stack;
+}
+
+h2 {
+    color: $h2;
+}
+
+nav {
+    ul {
+        margin: 1em 0;
+        padding: 1.25em;
+        list-style-type: none;
+        background-color: $nav;
+        border: $border;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 0;
+        text-decoration: none;
+    }
+}
+
+.blue {
+    background-color: $bluediv;
+    border: $border;
+}
+
+.yellow {
+    background-color: $yellowdiv;
+    border: $border;
+    padding: 20px 15px 55px 25px;
+}
+
+.selectbox {
+    border-radius: 4px;
+    border:1px solid black;
+}
+
+.col-md-11 {
+    padding: 0;
+}
+
+button {
+    margin:auto;
+    display:block;
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 5px 35px;
+}
