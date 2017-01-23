@@ -17,7 +17,7 @@ for (var i = 0; i < songs.length; i++) {
   songs[i] = songs[i].replace('*', '');
   songs[i] = songs[i].replace('(', '');
   insertSongs = document.getElementById('main-songs');
-  insertSongs.innerHTML += '<h4>' + songs[i] + '</h4>';
+  insertSongs.innerHTML += '<br><p>' + songs[i] + '</p>';
 }
 
 

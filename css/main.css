@@ -56,4 +56,17 @@ button {
 .genre li {
   font-size: .75em; }
 
+.visible {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+.addMusic {
+  text-align: center;
+  margin-top: 2em; }
+
+input {
+  border: 2px solid black; }
+
 /*# sourceMappingURL=main.css.map */

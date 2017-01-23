@@ -9,20 +9,20 @@
 </head>
 
 <body class="container">
+
     <div class="row">
         <div class="col-md-10">
             <header>
                 <nav>
                     <ul>
-                        <li><a href="#">View Music |</a></li>
-                        <li><a href="#">Add Music |</a></li>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="#" id="link-list">List Music |</a></li>
+                        <li><a href="#" id="link-add">Add Music </a></li>
                     </ul>
                 </nav>
             </header>
         </div>
     </div>
-
+    <section id="list-view">
         <div class="row">
             <div class="col-md-2 blue">
                 </br>
@@ -75,6 +75,22 @@
                 <p>Jayke Orvis | Strange and Dangerous Times | Bluegrass</p>
             </div>
         </div>
+    </section>
+
+    <section class="hidden" id="add-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 addMusic">
+                    <label for="song-name">Song Name: <input type="text" name="song-name" id="song-name"></label><br>
+                    <label for="song-name">Artist Name: <input type="text" name="artist-name" id="artist-name"></label><br>
+                    <label for="song-name">Album Name: <input type="text" name="album-name" id="album-name"></label><br><br>
+                    <button type="button" name="add">Add</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -82,5 +98,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/list.js"></script>
+<script type="text/javascript" src="scripts/add.js"></script>
 </body>
 </html>
