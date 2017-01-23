@@ -44,6 +44,7 @@ nav {
     background-color: $yellowdiv;
     border: $border;
     padding: 20px 15px 55px 25px;
+    margin-left: 14px;
 }
 
 .selectbox {
@@ -61,4 +62,13 @@ button {
     border-radius: 4px;
     border: 2px solid black;
     padding: 5px 35px;
+}
+
+.genre {
+     columns: 2;
+     list-style-type: none;
+}
+
+.genre li {
+    font-size: .75em;
 }
