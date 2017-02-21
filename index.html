@@ -65,15 +65,9 @@
             </div>
 
             <div id="main-songs" class="col-md-8 col-md-offset-1 yellow ">
-                <h2>Outlaw's Honeymoon</h2>
-                <p>Steve Earle | The Mountain | Bluegrass</p>
-                <h2>September Doves</h2>
-                <p>Lost Dog Street Band | Rage and Tragedy | County</p>
-                <h2>Dear John</h2>
-                <p>Hank Williams | I Saw the Light | Country</p>
-                <h2>Lead Me Astray</h2>
-                <p>Jayke Orvis | Strange and Dangerous Times | Bluegrass</p>
+                <h2>Songs List</h2>
             </div>
+            <div class="col-md-8 col-md-offset-2"> <button type="button" class="btn btn-default moreButton"> View More Songs</button></div>
         </div>
     </section>
 
@@ -84,7 +78,7 @@
                     <label for="song-name">Song Name: <input type="text" name="song-name" id="song-name"></label><br>
                     <label for="song-name">Artist Name: <input type="text" name="artist-name" id="artist-name"></label><br>
                     <label for="song-name">Album Name: <input type="text" name="album-name" id="album-name"></label><br><br>
-                    <button type="button" name="add">Add</button>
+                    <button id="addbutton" type="button" name="add">Add</button>
                 </div>
             </div>
         </div>
@@ -95,10 +89,8 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="scripts/main.js"></script>
-<script type="text/javascript" src="scripts/list.js"></script>
-<script type="text/javascript" src="scripts/add.js"></script>
+<script src="dist/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+{
+  "songs": [
+    {
+      "title": "Zombie",
+      "artist": "The Cranberries",
+      "album": "No Need to Argue",
+      "genre": "Rock"
+    },
+    {
+      "title": "Lead Me Astray",
+      "artist": "Jayke Orvis",
+      "album": "Strange and Dangerous Times",
+      "genre": "Bluegrass"
+    },
+    {
+      "title": "Jumbalaya (On the Bayou)",
+      "artist": "Hank Williams",
+      "album": "The Complete Hank Williams",
+      "genre": "Country"
+    },
+    {
+      "title": "Invitation to the Blues",
+      "artist": "Tom Waits",
+      "album": "Small Change",
+      "genre": "Blues"
+    },
+    {
+      "title": "Midnight Special",
+      "artist": "Willie Watson",
+      "album": "Folk Singer Vol.1",
+      "genre": "Folk"
+    }
+  ]
+}

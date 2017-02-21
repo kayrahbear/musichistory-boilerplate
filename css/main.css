@@ -10,7 +10,8 @@ body {
   font: Helvetica, sans-serif; }
 
 h2 {
-  color: #785616; }
+  color: #785616;
+  text-align: center; }
 
 nav ul {
   margin: 1em 0;
@@ -33,7 +34,10 @@ nav a {
   background-color: #FEFAC0;
   border: 3px solid black;
   padding: 20px 15px 55px 25px;
-  margin-left: 14px; }
+  margin-left: 14px;
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .selectbox {
   border-radius: 4px;
@@ -68,5 +72,9 @@ button {
 
 input {
   border: 2px solid black; }
+
+.moreButton {
+  border: 3px solid black !important;
+  background-color: #4DD7FA !important; }
 
 /*# sourceMappingURL=main.css.map */

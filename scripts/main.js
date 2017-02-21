@@ -1,36 +1,46 @@
-var songs = [];
+"use strict";
+
+console.log("When you eliminate the impossible, whatever remains, however improbable, must be the truth.");
+
+let addbutton = $(".addbutton"),
+    addSong = $(".song-name"),
+    addArtist = $(".artist-name"),
+    addAlbum = $(".album-name"),
+    Handlebars = require("hbsfy/runtime"),
+    mainSongs = require("./getMusic.js"),
+    secondSongs = require("./getMoreSongs.js"),
+    songTemplate = require("../templates/musicHistory.hbs"),
+    deleteIt = require("./events.js");
 
 
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+function populatePage(songsFromJsons){
+    let newSection = document.createElement("section");
+    newSection.innerHTML = songTemplate(songsFromJsons);
+    $("#main-songs").append(newSection);
+    deleteIt();
 
-songs.unshift('Old Number 7 > by The Devil Makes Three on the album The Devil Makes Three ');
-songs.push('Color of My Bloody Nose > by Possessed By Paul James on the album Feed the Family');
-
-for (var i = 0; i < songs.length; i++) {
-  songs[i] = songs[i].replace('>', '-');
-  songs[i] = songs[i].replace('@', '');
-  songs[i] = songs[i].replace('!', '');
-  songs[i] = songs[i].replace('*', '');
-  songs[i] = songs[i].replace('(', '');
-  insertSongs = document.getElementById('main-songs');
-  insertSongs.innerHTML += '<br><p>' + songs[i] + '</p>';
 }
 
+mainSongs.loadSongs()
+.then(
+    function(successfulJsonGet) {
+        populatePage(successfulJsonGet);
+        console.log("musicListOnePromise", successfulJsonGet);
+},
 
+function(reason) {
+    console.log("you broke it");
+});
 
+$(".moreButton").click(function(){
+    secondSongs.loadSongsAgain()
+    .then(
+        function(successfulJsonGet) {
+            populatePage(successfulJsonGet);
+            console.log("musicListTwoPromise", successfulJsonGet);
+    },
 
-// // Part 2
-// Requirements
-//
-// Use JavaScript arrays, loops, and innerHTML to show the music you love.
-//
-// Students must use JavaScript to create a list of songs in the index.html file for their Music History project. Have them download the songs.js file, which contains an array of strings with song information.
-//
-// Each student must add one song to the beginning and the end of the array.
-// Loop over the array and remove any words or characters that obviously don't belong.
-// Students must find and replace the > character in each item with a - character.
-// Must add each string to the DOM in index.html in the main content area.
+    function(reason) {
+        console.log("you broke it");
+    });
+});

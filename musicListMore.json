@@ -1,0 +1,34 @@
+{
+  "songs": [
+    {
+      "title": "Cocaine Lorraine",
+      "artist": "Sour Bridges",
+      "album": "Sour Bridges",
+      "genre": "Bluegrass"
+    },
+    {
+      "title": "Dead Body Ballet",
+      "artist": "LX",
+      "album": "Protest the Wind EP",
+      "genre": "Hardcore"
+    },
+    {
+      "title": "A Decade Under the Influance",
+      "artist": "Taking Back Sunday",
+      "album": "Where You Want to Be",
+      "genre": "Alt Rock"
+    },
+    {
+      "title": "You'll Never Leave Harlan Alive",
+      "artist": "Maxida Marak",
+      "album": "Mountain Songs and Other Stories",
+      "genre": "Folk"
+    },
+    {
+      "title": "Dixieland",
+      "artist": "Steve Earle & The Del McCoury Band",
+      "album": "The Mountain",
+      "genre": "Bluegrass"
+    }
+  ]
+}
